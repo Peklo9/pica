@@ -1,0 +1,173 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <style media="screen">
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: serif;
+      }
+
+      .sestavine {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
+
+      body {
+        background: #e2e1e0;
+      }
+
+      .okvir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+
+      .sestavina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 160px;
+        height: 150px;
+        background: #fff;
+        margin: 10px;
+        border-radius: 15px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      }
+
+      .izbor {
+
+      }
+
+      .prikazIzbor {
+        display: flex;
+        justify-content: center;
+        height: 20vh;
+        align-items:center;
+      }
+
+      .sesObl {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: rgb(130, 130, 130);
+        margin-right: ;
+
+      }
+
+      h1, h2 {
+        color: rgb(130, 130, 130)
+      }
+
+      .sestavini {
+        display: flex;
+        justify-content: space-around;
+        width: inherit;
+        margin-top: 5px
+      }
+
+      .zlica {
+        font-size: 1.1em;
+        color: rgb(130, 130, 130);
+      }
+
+      .kolicina {
+        padding: 2 15;
+        text-align: center;
+        border: 1px solid rgb(68, 87, 175);
+        border-radius: 2px;
+        cursor: pointer;
+        font-size: 1.5rem;
+      }
+
+      .kolicinaopis {
+        font-size: 2rem;
+
+      }
+
+      select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+    </style>
+    <title></title>
+    <script src="https://kit.fontawesome.com/fd70b0ed84.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div class="prikazIzbor">
+      <p class="kolicinaopis">Izberi število pic</p>
+      <select name="kolicina" class="kolicina">
+  <option value="175">1</option>
+  <option value="350">2</option>
+  <option value="525">3</option>
+  <option value="700">4</option>
+</select>
+    </div>
+    <div class="okvir">
+      <div class="sestavine">
+        <div class="sestavina">
+          <h1>Moka</h1>
+          <div class="sestavini">
+            <span><h2 class="moka">100g</h2></span>
+
+          </div>
+
+        </div>
+        <div class="sestavina">
+          <h1>Kvas</h1>
+          <div class="sestavini">
+            <span class="sesObl kvas">100g</span>
+            <div class="">
+              <span class="sesObl kvasZ">3,7</span><span class="zlica"><i class="fas fa-utensil-spoon"></i></span>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="sestavina">
+          <h1>Voda</h1>
+          <div class="sestavini">
+            <span class="sesObl voda">100g</span>
+          </div>
+        </div>
+        <div class="sestavina">
+          <h1>Sladkor</h1>
+          <div class="sestavini">
+            <span class="sesObl sladkor">100g</span>
+            <div class="">
+              <span class="sesObl sladkorZ">3,7</span><span class="zlica"><i class="fas fa-utensil-spoon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="sestavina">
+          <h1>Sol</h1>
+          <div class="sestavini">
+            <span class="sesObl sol">100g</span>
+            <div class="">
+              <span class="sesObl solZ">3,7</span><span class="zlica"><i class="fas fa-utensil-spoon"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="sestavina">
+          <h1>Olje</h1>
+          <div class="sestavini">
+            <span class="sesObl olje">100g</span>
+            <div class="">
+              <span class="sesObl solZ">3,7</span><span class="zlica"><i class="fas fa-utensil-spoon"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="pica.js" charset="utf-8"></script>
+  </body>
+</html>
